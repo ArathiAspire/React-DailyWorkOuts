@@ -4,6 +4,7 @@ import NoPortalModal from "./NoPortalModal";
 import PortalModal from "./PortalModal";
 import { Profiler } from "react";
 
+
 function App() {
   const onRender = (
     id,
@@ -14,7 +15,7 @@ function App() {
     commitTime,
     interactions
   ) => {
-    alert(`Component ${id} rendered in ${actualDuration} ms`);
+    console.log(`Component ${id} rendered in ${actualDuration} ms`);
   };
   return (
     <>
@@ -31,6 +32,7 @@ function App() {
       <div>
         <PortalModal />
       </div>
+
     </>
   );
 }
