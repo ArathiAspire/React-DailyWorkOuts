@@ -1,13 +1,11 @@
 
 import './App.css';
 import HOCButton from './HOCButton';
-import HOC from './HOCDemo';
 import HOCLabel from './HOCLabel';
 
 function App() {
   return (
-    <div className="App">
-    <HOC/>
+    <div className="App">    
     <HOCButton/>
     <HOCLabel/>
     </div>
